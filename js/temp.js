@@ -15,13 +15,11 @@ function toogleHeader() {
         header.style.transform = "scaleY(0)";
         toogleBtn.style.transform = "rotate(180deg)";
         toogleBtn.style.color = "#213c53";
-        toogleBtn.title = "Show Header"
         headerVisiblity = false;
     } else if(headerVisiblity == false){
         header.style.transform = "scaleY(100%)";
         toogleBtn.style.transform = "rotate(0deg)";
         toogleBtn.style.color = "white";
-        toogleBtn.title = "Hide Header"
         headerVisiblity = true;
     }
 }

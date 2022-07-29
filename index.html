@@ -11,17 +11,22 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Bocor</title>
 </head>
 
 <body>
-    <a href="#">
-        <div class="back-to-top">
+
+    <div id="top"></div>
+
+    <a href="#top">
+        <div title="Back to top of the Page" class="back-to-top">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
     </a>
 
-    <section class="header">
+    <section id="header">
         <section class="container">
             <section class="header-wrapper">
                 <div class="logo-area">
@@ -31,22 +36,40 @@
                 <div class="nav-area">
                     <div class="nav-wrapper">
                         <ul class="nav-list">
-                            <li class="nav-item"><a href="#">Home</a></li>
-                            <li class="nav-item"><a href="#">About Us</a></li>
-                            <li class="nav-item"><a href="#">Services</a></li>
-                            <li class="nav-item"><a href="#">Portfolio</a></li>
+                            <li class="nav-item"><a href="#" id="current-nav">Home</a></li>
+                            <li class="nav-item"><a href="#clients">About Us</a></li>
+                            <li class="nav-item"><a href="#services">Services</a></li>
+                            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
                             <li class="nav-item"><a href="#">Team</a></li>
-                            <li class="nav-item"><a href="#">Dropdown</a></li>
-                            <li class="nav-item"><a href="#">Contact</a></li>
+                            <li class="nav-item"><a href="#" id="nav-drop">Dropdown <i class="fa-solid fa-chevron-down"
+                                        id="nav-drop-icon"></i></a></li>
+                            <li class="nav-item"><a href="#contact">Contact</a></li>
                         </ul>
-                        <a href="www.google.com" class="get-started">Get Started</a>
+                        <a href="www.google.com" class="get-started" id="get-started">Get Started</a>
                     </div>
                 </div>
+
             </section>
         </section>
     </section>
 
-    <section class="banner">
+    <div id="drop-down-box">
+        <div id="drop-down">
+            <a href="" class="drop-item">Drop item 1</a>
+            <a href="" class="drop-item">Drop item 2</a>
+            <a href="" class="drop-item">Drop item 3</a>
+            <a href="" class="drop-item">Drop item 4</a>
+            <a href="" class="drop-item">Drop item 5</a>
+        </div>
+    </div>
+
+
+    <div id="header-toogle" title="Hide Header">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+
+    <section class="banner" id="banner">
         <section class="container">
             <div class="banner-wrapper">
                 <div class="banner-text-area">
@@ -62,7 +85,7 @@
         </section>
     </section>
 
-    <section class="clients">
+    <section class="clients" id="clients">
         <section class="container">
             <section class="clients-wrapper">
                 <div class="client-box"><img src="images/clients/client-1.png" alt="" class="client"></div>
@@ -75,7 +98,7 @@
         </section>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <section class="container">
             <section class="about-wrapper">
 
@@ -157,7 +180,7 @@
         </section>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <section class="container">
 
             <div class="services-heading-area section-heading-area">
@@ -235,7 +258,7 @@
 
     <!--features-->
 
-    <section class="features">
+    <section class="features" id="features">
         <section class="container">
             <div class="features-heading-area section-heading-area">
                 <h1 class="features-heading-heading section-heading-heading">
@@ -342,8 +365,6 @@
                             laborum</p>
                     </div>
                 </div>
-
-
             </div>
 
         </section>
@@ -353,7 +374,7 @@
 
     <!--Portfolio-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <section class="container">
             <div class="portfolio-heading-area section-heading-area">
                 <h1 class="portfolio-heading-heading section-heading-heading">
@@ -382,7 +403,10 @@
                     <div class="portfolio-gallery-wrapper">
 
                         <div class="portfolio-image-box">
+                            
+                            
                             <img src="images/portfolio/portfolio-1.jpg" alt="" class="portfolio-image">
+                            <div class="tag"></div>
                         </div>
                         <div class="portfolio-image-box">
                             <img src="images/portfolio/portfolio-2.jpg" alt="" class="portfolio-image">
@@ -420,7 +444,7 @@
 
     <!--contact End-->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <section class="container">
             <div class="contact-heading-area section-heading-area">
                 <h1 class="contact-heading-heading section-heading-heading">
@@ -469,8 +493,9 @@
                             <input type="text" placeholder="Your Name" class="contact-name-field">
                             <input type="text" placeholder="Your Email" class="contact-email-field">
                             <input type="text" placeholder="subject" class="contact-subject-field">
-                            
-                            <textarea rows="2" cols="20" name="usrtxt" wrap="hard"  class="contact-message-field">Your Message</textarea>
+
+                            <textarea rows="2" cols="20" name="usrtxt" wrap="hard"
+                                class="contact-message-field">Your Message</textarea>
                         </div>
 
                         <div class="send-button-area">
@@ -488,7 +513,7 @@
     <!--footer-->
 
     <section class="footer-background">
-        <section class="footer">
+        <section class="footer" id="footer">
             <section class="container">
                 <div class="footer-top-container">
                     <h1 class="logo footer-logo">BOCOR<span class="logo-dot">.</span></h1>
@@ -534,7 +559,7 @@
                     </div>
                 </div>
 
-                <hr class="footer-hr">
+                <hr class="footer-hr" id="tst">
 
                 <div class="footer-bottom-container">
                     <div class="footer-bottom-wrapper">
@@ -544,13 +569,17 @@
                 </div>
 
 
-                <script src="https://kit.fontawesome.com/9ae9aa99b3.js" crossorigin="anonymous"></script>
             </section>
         </section>
     </section>
 
 
+    
+
+    <script src="https://kit.fontawesome.com/9ae9aa99b3.js" crossorigin="anonymous"></script>
+
     <script src="js/main.js"></script>
+    <!-- <script src="./js/temp.js"></script> -->
 </body>
 
 </html>
